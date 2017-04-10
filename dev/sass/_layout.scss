@@ -1,3 +1,8 @@
+h1 {
+	background-color: $black;
+	color: $white;
+}
+
 .angie {
 	width: 400px;
 	padding: 1rem 2rem;
@@ -16,3 +21,23 @@ p {
 .skills li {
 	display: block;
 }
+
+@media screen and (min-width: 800px) {
+	header {
+		background-color: $black;
+		position: relative;
+		height: $line-height * 3.4;
+		border: solid 1px red;
+	}
+
+	h1 {
+		float: left;
+		width: 50%
+	}
+	
+	nav {
+		float: right;
+	}
+}
+
+

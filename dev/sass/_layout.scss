@@ -27,7 +27,6 @@ p {
 		background-color: $black;
 		position: relative;
 		height: $line-height * 3.4;
-		border: solid 1px red;
 	}
 
 	h1 {
@@ -37,6 +36,9 @@ p {
 	
 	nav {
 		float: right;
+		background-color: $black;
+		color: $white;
+		border: solid 1px red;
 	}
 }
 

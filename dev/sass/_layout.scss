@@ -1,10 +1,15 @@
 h1 {
 	background-color: $black;
-	color: $white;
+	color: $green;
 }
 
 img {
 	max-width: 100%;
+}
+
+.angie {
+	max-width: 300px;
+	margin: auto;
 }
 
 p {
@@ -23,6 +28,30 @@ p {
 
 .visuallyhidden {
 	display: none;
+}
+
+.resume-header {
+    background-color: $green;
+    font-weight: bolder;
+    padding: .5rem;
+}
+
+.skills p, .software p {
+	line-height: .5rem;
+}
+
+.education h3, .experience h3 {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.education p, .experience p {
+	margin: 0;
+}
+
+.education h4 {
+	margin: 0;
+	text-align: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -80,11 +109,16 @@ p {
 
     .social-nav {
     	text-align: center;
-    	margin: 1rem 1rem 10rem 1rem;
+    	margin: 5rem;
     }
 }
 
 @media screen and (min-width: 800px) {
+	body {
+		max-width: 1000px;
+		margin: auto;
+	}
+
 	header {
 		background-color: $black;
 		position: relative;
@@ -93,7 +127,7 @@ p {
 
 	h1 {
 		float: left;
-		width: 50%
+		width: 45%
 	}
 	
 	.main-nav {
@@ -106,6 +140,24 @@ p {
 
   	.mobile-hidden {
   		display: none;
+  	}
+
+  	section {
+  		position: relative;
+  		overflow: hidden;
+  	}
+
+  	.angie {
+  		float: right;
+  		width: 35%;
+  		margin: 1rem;
+  		text-align: left;
+  	}
+
+  	.bio {
+  		float: left;
+  		width: 60%;
+		padding: 6rem 1rem;
   	}
 }
 

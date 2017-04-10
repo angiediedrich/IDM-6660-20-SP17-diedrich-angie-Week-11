@@ -67,10 +67,14 @@ body {
 
 h1 {
   background-color: #111;
-  color: #eee; }
+  color: #b3c855; }
 
 img {
   max-width: 100%; }
+
+.angie {
+  max-width: 300px;
+  margin: auto; }
 
 p {
   line-height: 1.5rem;
@@ -85,6 +89,25 @@ p {
 
 .visuallyhidden {
   display: none; }
+
+.resume-header {
+  background-color: #b3c855;
+  font-weight: bolder;
+  padding: .5rem; }
+
+.skills p, .software p {
+  line-height: .5rem; }
+
+.education h3, .experience h3 {
+  text-align: center;
+  margin-top: 1rem; }
+
+.education p, .experience p {
+  margin: 0; }
+
+.education h4 {
+  margin: 0;
+  text-align: center; }
 
 @media screen and (min-width: 480px) {
   .dropdown ul {
@@ -106,7 +129,7 @@ p {
       color: #eee;
       text-decoration: none; }
     .dropdown ul a:hover {
-      color: #2ecc40;
+      color: #b3c855;
       font-size: 1em;
       text-decoration: none; }
     .dropdown ul a:active {
@@ -123,8 +146,12 @@ p {
 
   .social-nav {
     text-align: center;
-    margin: 1rem 1rem 10rem 1rem; } }
+    margin: 5rem; } }
 @media screen and (min-width: 800px) {
+  body {
+    max-width: 1000px;
+    margin: auto; }
+
   header {
     background-color: #111;
     position: relative;
@@ -132,7 +159,7 @@ p {
 
   h1 {
     float: left;
-    width: 50%; }
+    width: 45%; }
 
   .main-nav {
     float: right; }
@@ -141,7 +168,22 @@ p {
     display: block; }
 
   .mobile-hidden {
-    display: none; } }
+    display: none; }
+
+  section {
+    position: relative;
+    overflow: hidden; }
+
+  .angie {
+    float: right;
+    width: 35%;
+    margin: 1rem;
+    text-align: left; }
+
+  .bio {
+    float: left;
+    width: 60%;
+    padding: 6rem 1rem; } }
 h1 {
   font-size: 48px;
   text-align: center;

@@ -34,35 +34,35 @@ p {
     		max-height: 0;
     		overflow: visible;
 
-    	li {
-	        background-color: transparent;
-	        display: inline-block;
-	        margin: 0 1rem 0 0;
-	        padding: 0;
-	        text-align: center;
-	    }
+	    	li {
+		        background-color: transparent;
+		        display: inline-block;
+		        margin: 0 1rem 0 0;
+		        padding: 0;
+		        text-align: center;
+		    }
 
-	    a {
-	      	display: inline;
-	      	height: 100%;
-	      	width: 100%;
-	    }
+		    a {
+		      	display: inline;
+		      	height: 100%;
+		      	width: 100%;
+		    }
 
-	    a:link, a:visited {
-	      color: $white;
-	      text-decoration: none;
-	    }
+		    a:link, a:visited {
+		      color: $white;
+		      text-decoration: none;
+		    }
 
-	    a:hover {
-		    color: $green;
-		    font-size: 1em;
-		    text-decoration: none;
+		    a:hover {
+			    color: $green;
+			    font-size: 1em;
+			    text-decoration: none;
+			}
+
+			a:active {
+			    color: $white;
+			}
 		}
-
-		a:active {
-		    color: $white;
-		}
-	  }
 
 	    .menu-controller-checkbox ~ ul {
 	      max-height: none;
@@ -76,6 +76,11 @@ p {
 	      display: none;
 	      visibility: hidden;
 	    }
+    }
+
+    .social-nav {
+    	text-align: center;
+    	margin: 1rem 1rem 10rem 1rem;
     }
 }
 
@@ -91,7 +96,7 @@ p {
 		width: 50%
 	}
 	
-	nav {
+	.main-nav {
 		float: right;
 	}
 

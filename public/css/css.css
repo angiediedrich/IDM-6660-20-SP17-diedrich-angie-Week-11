@@ -119,7 +119,11 @@ p {
     padding: 1rem; }
   .dropdown .menu-controller-label {
     display: none;
-    visibility: hidden; } }
+    visibility: hidden; }
+
+  .social-nav {
+    text-align: center;
+    margin: 1rem 1rem 10rem 1rem; } }
 @media screen and (min-width: 800px) {
   header {
     background-color: #111;
@@ -130,7 +134,7 @@ p {
     float: left;
     width: 50%; }
 
-  nav {
+  .main-nav {
     float: right; }
 
   .desktop-hidden {

@@ -3,12 +3,6 @@ h1 {
 	color: $white;
 }
 
-.angie {
-	width: 400px;
-	padding: 1rem 2rem;
-	margin: auto;
-}
-
 img {
 	max-width: 100%;
 }
@@ -16,41 +10,73 @@ img {
 p {
 	line-height: $line-height;
 	margin: 1rem;
+	text-align: center;
 }
 
 .skills li {
 	display: block;
 }
 
+.desktop-hidden {
+	display: none;
+}
+
+.visuallyhidden {
+	display: none;
+}
+
 @media screen and (min-width: 480px) {
+	.dropdown {
 
-  .dropdown {
+  		ul {
+    		font-family: $header-font;
+    		font-size: 2em;
+    		max-height: 0;
+    		overflow: visible;
 
-    .menu-controller-checkbox ~ ul {
-      max-height: none;
-      overflow: visible;
-      text-align: center;
-      background-color: $gray;
+    	li {
+	        background-color: transparent;
+	        display: inline-block;
+	        margin: 0 1rem 0 0;
+	        padding: 0;
+	        text-align: center;
+	    }
+
+	    a {
+	      	display: inline;
+	      	height: 100%;
+	      	width: 100%;
+	    }
+
+	    a:link, a:visited {
+	      color: $white;
+	      text-decoration: none;
+	    }
+
+	    a:hover {
+		    color: $green;
+		    font-size: 1em;
+		    text-decoration: none;
+		}
+
+		a:active {
+		    color: $white;
+		}
+	  }
+
+	    .menu-controller-checkbox ~ ul {
+	      max-height: none;
+	      overflow: visible;
+	      text-align: center;
+	      background-color: $black;
+	      padding: 1rem;
+	    }
+
+	    .menu-controller-label {
+	      display: none;
+	      visibility: hidden;
+	    }
     }
-
-    .menu-controller-label {
-      display: none;
-      visibility: hidden;
-    }
-
-    ul {
-      a { display: inline;
-      }
-
-      li {
-        background-color: transparent;
-        display: inline-block;
-        margin: 0 1rem 0 0;
-        padding: 0;
-        text-align: center;
-      }
-    }
-  }
 }
 
 @media screen and (min-width: 800px) {
@@ -69,29 +95,13 @@ p {
 		float: right;
 	}
 
-	.dropdown {
+    .desktop-hidden {
+  		display: block;
+  	}
 
-    	.menu-controller-checkbox ~ ul {
-      		background-color: $black;
-      		color: $white;
-      		padding: 1.3rem 0;
-
-	      	a:link, a:visited {
-	      		color: $white;
-		    }
-
-		    a:hover {
-		    	color: $green;
-		    	font-size: 1em;
-		    	text-decoration: none;
-		    }
-
-		    a:active {
-		      color: $white;
-		    }
-		}
-    }
-
+  	.mobile-hidden {
+  		display: none;
+  	}
 }
 
 

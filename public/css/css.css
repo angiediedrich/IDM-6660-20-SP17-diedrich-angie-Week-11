@@ -17,6 +17,67 @@ body {
   background-color: #39cccc; }
 @media screen and (min-width: 1000px) {
   background-color: #2ecc40; }
+h1 {
+  background-color: #111;
+  color: #eee; }
+
+.angie {
+  width: 400px;
+  padding: 1rem 2rem;
+  margin: auto; }
+
+img {
+  max-width: 100%; }
+
+p {
+  line-height: 1.5rem;
+  margin: 1rem; }
+
+.skills li {
+  display: block; }
+
+@media screen and (min-width: 480px) {
+  .dropdown .menu-controller-checkbox ~ ul {
+    max-height: none;
+    overflow: visible;
+    text-align: center;
+    background-color: #bbb; }
+  .dropdown .menu-controller-label {
+    display: none;
+    visibility: hidden; }
+  .dropdown ul a {
+    display: inline; }
+  .dropdown ul li {
+    background-color: transparent;
+    display: inline-block;
+    margin: 0 1rem 0 0;
+    padding: 0;
+    text-align: center; } }
+@media screen and (min-width: 800px) {
+  header {
+    background-color: #111;
+    position: relative;
+    height: 5.1rem; }
+
+  h1 {
+    float: left;
+    width: 50%; }
+
+  nav {
+    float: right; }
+
+  .dropdown .menu-controller-checkbox ~ ul {
+    background-color: #111;
+    color: #eee;
+    padding: 1.3rem 0; }
+    .dropdown .menu-controller-checkbox ~ ul a:link, .dropdown .menu-controller-checkbox ~ ul a:visited {
+      color: #eee; }
+    .dropdown .menu-controller-checkbox ~ ul a:hover {
+      color: #2ecc40;
+      font-size: 1em;
+      text-decoration: none; }
+    .dropdown .menu-controller-checkbox ~ ul a:active {
+      color: #eee; } }
 .menu-controller-checkbox {
   display: none; }
 
@@ -65,23 +126,6 @@ body {
   margin: .5rem 0;
   text-align: center; }
 
-@media screen and (min-width: 480px) {
-  .dropdown .menu-controller-checkbox ~ ul {
-    max-height: none;
-    overflow: visible;
-    text-align: center;
-    background-color: #bbb; }
-  .dropdown .menu-controller-label {
-    display: none;
-    visibility: hidden; }
-  .dropdown ul a {
-    display: inline; }
-  .dropdown ul li {
-    background-color: transparent;
-    display: inline-block;
-    margin: 0 1rem 0 0;
-    padding: 0;
-    text-align: center; } }
 h1 {
   background-color: #111;
   color: #eee; }
@@ -101,6 +145,23 @@ p {
 .skills li {
   display: block; }
 
+@media screen and (min-width: 480px) {
+  .dropdown .menu-controller-checkbox ~ ul {
+    max-height: none;
+    overflow: visible;
+    text-align: center;
+    background-color: #bbb; }
+  .dropdown .menu-controller-label {
+    display: none;
+    visibility: hidden; }
+  .dropdown ul a {
+    display: inline; }
+  .dropdown ul li {
+    background-color: transparent;
+    display: inline-block;
+    margin: 0 1rem 0 0;
+    padding: 0;
+    text-align: center; } }
 @media screen and (min-width: 800px) {
   header {
     background-color: #111;
@@ -112,10 +173,20 @@ p {
     width: 50%; }
 
   nav {
-    float: right;
+    float: right; }
+
+  .dropdown .menu-controller-checkbox ~ ul {
     background-color: #111;
     color: #eee;
-    border: solid 1px red; } }
+    padding: 1.3rem 0; }
+    .dropdown .menu-controller-checkbox ~ ul a:link, .dropdown .menu-controller-checkbox ~ ul a:visited {
+      color: #eee; }
+    .dropdown .menu-controller-checkbox ~ ul a:hover {
+      color: #2ecc40;
+      font-size: 1em;
+      text-decoration: none; }
+    .dropdown .menu-controller-checkbox ~ ul a:active {
+      color: #eee; } }
 h1 {
   font-size: 48px;
   text-align: center;

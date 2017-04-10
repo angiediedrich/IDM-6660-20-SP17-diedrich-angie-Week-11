@@ -22,6 +22,37 @@ p {
 	display: block;
 }
 
+@media screen and (min-width: 480px) {
+
+  .dropdown {
+
+    .menu-controller-checkbox ~ ul {
+      max-height: none;
+      overflow: visible;
+      text-align: center;
+      background-color: $gray;
+    }
+
+    .menu-controller-label {
+      display: none;
+      visibility: hidden;
+    }
+
+    ul {
+      a { display: inline;
+      }
+
+      li {
+        background-color: transparent;
+        display: inline-block;
+        margin: 0 1rem 0 0;
+        padding: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 800px) {
 	header {
 		background-color: $black;
@@ -36,10 +67,31 @@ p {
 	
 	nav {
 		float: right;
-		background-color: $black;
-		color: $white;
-		border: solid 1px red;
 	}
+
+	.dropdown {
+
+    	.menu-controller-checkbox ~ ul {
+      		background-color: $black;
+      		color: $white;
+      		padding: 1.3rem 0;
+
+	      	a:link, a:visited {
+	      		color: $white;
+		    }
+
+		    a:hover {
+		    	color: $green;
+		    	font-size: 1em;
+		    	text-decoration: none;
+		    }
+
+		    a:active {
+		      color: $white;
+		    }
+		}
+    }
+
 }
 
 
